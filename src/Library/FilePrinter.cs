@@ -5,9 +5,9 @@ namespace Full_GRASP_And_SOLID.Library
 {
     public class FilePrinter : IPrinter
     {
-        public void Print(string text)
+        public void Print(Recipe recipe)
         {
-            File.WriteAllText("Recipe.txt",text);
+            File.WriteAllText("Recipe.txt",recipe.GetTextToPrint());
         }
     }
 }
